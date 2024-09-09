@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <h1>css flexbox photo gallery</h1>
+  </header>
+  <div class="gallery" id="gallery">
+    <a href="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/1.jpg" data-src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/1.jpg">
+    <img class="imgs" src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/1.jpg">
+    </a>
+    <a href="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/2.jpg" data-src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/2.jpg">
+    <img class="imgs" src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/2.jpg">
+    </a>
+    <a href="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/3.jpg" data-src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/3.jpg">
+    <img class="imgs" src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/3.jpg">
+    </a>
+    <script src="./js/lightgallery.min.js"></script>
+    <script>
+      const images = document.querySelector('.gallery')
+      lightGallery(images);
+    </script>
+  </div> 
+</body>
+</html>
